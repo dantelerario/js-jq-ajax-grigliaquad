@@ -1,7 +1,37 @@
 /* GENERAL SETTINGS */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+/* MAIN APP */
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 6;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  width: 50%;
+  height: 50%;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 15%;
+  border: 3px solid #517191;
+  padding: 10px;
+  margin: 5px;
+  height: auto;
+  cursor: pointer;
+}
+.green {
+  background: lightgreen;
+}
+
+.yellow {
+  background: yellow;
 }
