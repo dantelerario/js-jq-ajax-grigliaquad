@@ -5,6 +5,16 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
+  background: rgba(51,71,91, .3);
+}
+/* HEADER & FOOTER */
+header,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  width: 50%;
 }
 /* MAIN APP */
 #app {
@@ -16,6 +26,7 @@
   margin: 100px auto;
   width: 50%;
   height: 50%;
+  z-index: -5;
 }
 .box {
   display: flex;
@@ -27,11 +38,27 @@
   margin: 5px;
   height: auto;
   cursor: pointer;
+  z-index: 3;
 }
 .green {
   background: lightgreen;
 }
-
 .yellow {
   background: yellow;
+}
+.spinClass {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: -3;
+}
+/* ANIMATION */
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
