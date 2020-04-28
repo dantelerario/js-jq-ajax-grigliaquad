@@ -23,8 +23,8 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   margin: 100px auto;
-  width: 30%;
-  height: 50%;
+  width: 600px;
+  height: 600px;
   z-index: -5;
 }
 .box {
@@ -32,10 +32,9 @@ footer {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  flex-basis: 14%;
+  width: calc(100% / 6);
+  height: calc(100% / 6);
   border: 3px solid #517191;
-  padding: 10px;
-  margin: 5px;
   cursor: pointer;
   z-index: 3;
 }
